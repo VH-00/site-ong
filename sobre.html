@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="instituição">
+    <title>Sobre | instituição</title>
+    
+    <!-- Pré-conexão para CDNs -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Pré-carregar imagens importantes -->
+    <link rel="preload" href="img/logo.png" as="image">
+    <link rel="preload" href="img/logo-branco.png" as="image">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo instituição" width="60" height="60">
+                <span class="logo-text">instituição</span>
+            </div>
+            
+            <!-- Menu de navegação principal -->
+          <nav id="main-nav" class="nav" aria-label="Navegação principal">
+    <ul class="nav-list">
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+
+        <!-- Menu de Projetos -->
+        <li class="dropdown">
+            <a href="projetos/projetos.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                Projetos <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="projetos/sede.html" class="dropdown-link">Sede</a>
+                <a href="projetos/projeto1.html" class="dropdown-link">projeto 1 </a>
+                <a href="projetos/projeto2.html" class="dropdown-link">projeto 2</a>
+                <a href="projetos/projeto3.html" class="dropdown-link">projeto 3</a>
+                <a href="projetos/projeto4.html" class="dropdown-link">projeto 4</a>
+                <a href="projetos/creches/creches.html" class="dropdown-link">
+                    Creches CEDINS <i class="fas fa-chevron-right"></i>
+                </a>
+                <div class="nested-dropdown">
+                    <a href="projetos/creches/creche1.html" class="dropdown-link">creche 1</a>
+                    <a href="projetos/creches/creche2.html" class="dropdown-link">creche 2</a>
+                    <a href="projetos/creches/creche3.html" class="dropdown-link">creche 3</a>
+                    
+                </div>
+            </div>
+        </li>
+        
+        <!-- Menu de Transparência -->
+        <li class="dropdown">
+            <a href="transparencia/transparencia.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                Transparência <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="transparencia/transparencia.html" class="dropdown-link">Visão Geral</a>
+                <div class="dropdown-divider"></div>
+                <span class="dropdown-header">Transparência por Projeto</span>
+                <a href="transparencia/transparencia-sede.html" class="dropdown-link">Sede instituição</a>
+                <a href="transparencia/transparencia-projeto1.html" class="dropdown-link">Projeto 1</a>
+            </div>
+        </li>
+        
+        <!-- Outros Links -->
+        <li><a href="como-ajudar.html" class="nav-link">Como Ajudar</a></li>
+        <li><a href="trabalhe-conosco.html" class="nav-link">Trabalhe Conosco</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+</nav>
+            
+            <!-- Botão do menu móvel -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="sobre-page">
+        <section class="hero page-header" style="background: linear-gradient(rgba(240, 209, 71, 0.8), rgba(240, 209, 71, 0.8)), url('img/sobre-bg.jpg') center/cover;">
+            <div class="container">
+                <h1 class="hero-title">Sobre a VAPI</h1>
+                <p class="hero-text">Conheça nossa missão, visão e valores</p>
+            </div>
+        </section>
+
+        <section class="section sobre-intro bg-light">
+            <div class="container">
+                <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+                    <h2 class="section-title">Vila de Assistência e Proteção dos Indivíduos - VAPI</h2>
+                    <p class="section-text">A VAPI é uma Associação não governamental, de direitos privados, sem fins lucrativos, que atua em diversos segmentos da sociedade, na defesa de direitos e serviços socioassistenciais, educacionais, culturais e de esporte, lazer e saúde. A VAPI possui certificações e inscrições ativas nos principais órgãos e conselhos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sobre-missao">
+            <div class="container">
+                <div class="grid grid-2cols" style="align-items: center; gap: 50px;">
+                    <div class="missao-content">
+                        <h2 class="section-title"><i class="fas fa-bullseye" style="color: var(--primary-color);"></i> Nossa Missão</h2>
+                        <p class="section-text">Proporcionar oportunidades para a melhoria na qualidade de vida das pessoas por meio de ações que contribuam para a garantia de direitos e fortalecimentos de vínculos, além de criar e gerenciar mecanismos de que assegurem o direito à vida, à saúde, à alimentação, educação, cultura, esporte, lazer, cidadania, liberdade, autonomia, à dignidade, respeito às diferentes culturas e crenças.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sobre-visao bg-light">
+            <div class="container">
+                <div class="grid grid-2cols" style="align-items: center; gap: 50px;">
+                    <div class="visao-content">
+                        <h2 class="section-title"><i class="fas fa-eye" style="color: var(--primary-color);"></i> Nossa Visão</h2>
+                        <p class="section-text">Ser referência como OSC que desenvolve, administra e executa projetos sociais pautados no compromisso de garantir direitos e melhoria na qualidade de vida das pessoas, especialmente aquelas em situação de vulnerabilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sobre-valores">
+            <div class="container">
+                <h2 class="section-title text-center"><i class="fas fa-heart" style="color: var(--primary-color);"></i> Nossos Valores</h2>
+                <div class="grid grid-3cols" style="gap: 30px; margin-top: 40px;">
+                    <div class="card valor-item text-center">
+                        <i class="fas fa-balance-scale icon-lg" style="color: var(--secondary-color);"></i>
+                        <h3>Ética</h3>
+                        <p>Agimos com integridade e transparência em todas as nossas ações</p>
+                    </div>
+                    <div class="card valor-item text-center">
+                        <i class="fas fa-lock-open icon-lg" style="color: var(--secondary-color);"></i>
+                        <h3>Transparência</h3>
+                        <p>Prestamos contas de forma clara e acessível a todos</p>
+                    </div>
+                    <div class="card valor-item text-center">
+                        <i class="fas fa-hands-helping icon-lg" style="color: var(--secondary-color);"></i>
+                        <h3>Compromisso Social</h3>
+                        <p>Dedicamos nossos esforços para causas que transformam vidas</p>
+                    </div>
+                    <div class="card valor-item text-center">
+                        <i class="fas fa-users icon-lg" style="color: var(--secondary-color);"></i>
+                        <h3>Valorização Humana</h3>
+                        <p>Respeitamos e valorizamos cada indivíduo em sua singularidade</p>
+                    </div>
+                    <div class="card valor-item text-center">
+                        <i class="fas fa-shield-alt icon-lg" style="color: var(--secondary-color);"></i>
+                        <h3>Integridade</h3>
+                        <p>Mantemos coerência entre nossos princípios e ações</p>
+                    </div>
+                    <div class="card valor-item text-center">
+                        <i class="fas fa-handshake icon-lg" style="color: var(--secondary-color);"></i>
+                        <h3>Respeito</h3>
+                        <p>Honramos a diversidade e as diferenças culturais</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sobre-diretoria">
+            <div class="container">
+                <h2 class="section-title text-center"><i class="fas fa-users" style="color: var(--primary-color);"></i> Nossa Diretoria</h2>
+                
+                <div class="card diretoria-info" style="margin-bottom: 20px;">
+                    <div class="card-content">
+                        <blockquote class="diretoria-estatuto">
+                            <p><strong>Art. 10º Estatuto Social:</strong> "Os diretores da associação, conselheiro e os associados de qualquer categoria, não receberão remuneração, vantagens ou benefícios direta ou indiretamente, por qualquer forma ou título, em razão das competências, funções ou atividades que lhes sejam atribuídas pelo Estatuto Social."</p>
+                            <p class="destaque-voluntario">TODA A DIRETORIA É VOLUNTÁRIA. NÃO RECEBE NENHUMA REMUNERAÇÃO, VANTAGEM OU BENEFÍCIOS DIRETA OU INDIRETAMENTE</p>
+                        </blockquote>
+                        
+                        <div class="diretoria-mandato">
+                            <p><strong>Mandato:</strong> De 17/09/2024 à 16/08/2028</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-2cols diretoria-membros">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="cargo-diretoria">Presidente</h3>
+                            <p class="nome-diretoria">Ana Maria de Oliveira Baltazar</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="cargo-diretoria">Vice-Presidente</h3>
+                            <p class="nome-diretoria">Emanuelle Cristina da Costa Pereira Sanchez Aguilera</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="cargo-diretoria">1ª Tesoureira</h3>
+                            <p class="nome-diretoria">Maria Cristina Canela Olivas Faraco</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="cargo-diretoria">2º Tesoureiro</h3>
+                            <p class="nome-diretoria">Sara Bueno Volponi</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="cargo-diretoria">1ª Secretária</h3>
+                            <p class="nome-diretoria">Andrea Rosangela Leal Marques</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conselho-fiscal" style="margin-top: 30px;">
+                    <h3 class="section-subtitle text-center">Conselho Fiscal</h3>
+                    
+                    <div class="grid grid-2cols" style="margin-top: 30px;">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4 class="cargo-diretoria">Titulares</h4>
+                                <ul class="styled-list">
+                                    <li>Carlos Alberto Macedo Bastos</li>
+                                    <li>William de Souza Marcondes Pereira</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <h4 class="cargo-diretoria">Membros Suplentes</h4>
+                                <ul class="styled-list">
+                                    <li>Leonildo de Oliveira</li>
+                                    <li>Maria Aparecida da Silva Bastos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sobre-documentos bg-light">
+            <div class="container">
+                <div class="grid grid-2cols" style="gap: 90px;">
+                    <div class="documentos-item">
+                        <h2 class="section-title"><i class="fas fa-file-alt" style="color: var(--primary-color);"></i> Documentos</h2>
+                        <div class="card">
+                            <div class="card-content">
+                                <h3>CNPJ: 96.488.556/0001-48</h3>
+                                <p>Vila de Assistência e Proteção dos Indivíduos - VAPI</p>
+                                
+                                <h3 style="margin-top: 30px;">Inscrições:</h3>
+                                <ul class="styled-list">
+                                    <li><strong>CMAS:</strong> nº 051 - São José dos Campos</li>
+                                    <li><strong>CMI:</strong> nº 05 - São José dos Campos</li>
+                                    <li><strong>CMDCA:</strong> nº 168 - São José dos Campos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificacoes-item">
+                        <h2 class="section-title"><i class="fas fa-certificate" style="color: var(--primary-color);"></i> Certificações</h2>
+                        <div class="card" style="gap: 20px">
+                            <div class="card-content" style="gap: 20px">
+                                <h3>CEBAS</h3>
+                                <p><strong>Portaria:</strong> nº 206/2020 item 72</p>
+                                <p><strong>Vigência:</strong> 30/07/2020 a 29/07/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="img/logo.png" alt="Logo instituição" class="footer-logo" width="120" height="120" loading="lazy">
+                    <p>Transformando vidas através de projetos sociais desde 1994.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="projetos/projetos.html">Projetos</a></li>
+                        <li><a href="transparencia/transparencia.html">Transparência</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Projetos</h3>
+                    <ul>
+                        <li><a href="projetos/projeto1.html">projeto 1</a></li>
+                        <li><a href="projetos/projeto2.html">projeto 2</a></li>
+                        <li><a href="projetos/projeto3.html">projeto 3</a></li>
+                        <li><a href="projetos/projeto4.html">projeto 4</a></li>
+                        <li><a href="projetos/creches/creches.html">Creches CEDINS</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Contato</h3>
+                    <ul>
+                        <li class="contact-item"><i class="fas fa-map-marker-alt"></i> Rua doze, 000 – bairro 1
+
+                            CEP 12230-660 
+                            
+                            São José dos Campos – SP
+                            
+                            </li>
+                        <li class="contact-item"><i class="fas fa-phone"></i> (00) 0000-0000</li>
+                        <li class="contact-item"><i class="fas fa-envelope"></i>instituição@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> instituição. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

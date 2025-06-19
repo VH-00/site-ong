@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="instituição">
+    <title>Projeto 3 | instituição</title>
+    
+    <!-- Pré-conexão para CDNs -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Pré-carregar imagens importantes -->
+    <link rel="preload" href="img/logo.png" as="image">
+    <link rel="preload" href="img/logo-branco.png" as="image">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo instituição" width="60" height="60">
+                <span class="logo-text">instituição</span>
+            </div>
+            
+            <!-- Menu de navegação principal -->
+          <nav id="main-nav" class="nav" aria-label="Navegação principal">
+    <ul class="nav-list">
+        <li><a href="../index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="../sobre.html" class="nav-link">Sobre Nós</a></li>
+
+        <!-- Menu de Projetos -->
+        <li class="dropdown">
+            <a href="projetos.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                Projetos <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="sede.html" class="dropdown-link">Sede</a>
+                <a href="projeto1.html" class="dropdown-link">projeto 1 </a>
+                <a href="projeto2.html" class="dropdown-link">projeto 2</a>
+                <a href="projeto3.html" class="dropdown-link">projeto 3</a>
+                <a href="projeto4.html" class="dropdown-link">projeto 4</a>
+                <a href="creches/creches.html" class="dropdown-link">
+                    Creches CEDINS <i class="fas fa-chevron-right"></i>
+                </a>
+                <div class="nested-dropdown">
+                    <a href="creches/creche1.html" class="dropdown-link">creche 1</a>
+                    <a href="creches/creche2.html" class="dropdown-link">creche 2</a>
+                    <a href="creches/creche3.html" class="dropdown-link">creche 3</a>
+                    
+                </div>
+            </div>
+        </li>
+        
+        <!-- Menu de Transparência -->
+        <li class="dropdown">
+            <a href="../transparencia/transparencia.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                Transparência <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="../transparencia/transparencia.html" class="dropdown-link">Visão Geral</a>
+                <div class="dropdown-divider"></div>
+                <span class="dropdown-header">Transparência por Projeto</span>
+                <a href="../transparencia/transparencia-sede.html" class="dropdown-link">Sede instituição</a>
+                <a href="../transparencia/transparencia-projeto1.html" class="dropdown-link">Projeto 1</a>
+            </div>
+        </li>
+        
+        <!-- Outros Links -->
+        <li><a href="../como-ajudar.html" class="nav-link">Como Ajudar</a></li>
+        <li><a href="../trabalhe-conosco.html" class="nav-link">Trabalhe Conosco</a></li>
+        <li><a href="../contato.html" class="nav-link">Contato</a></li>
+    </ul>
+</nav>
+            
+            <!-- Botão do menu móvel -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+       <main class="projeto-page">
+        <section class="hero page-header" style="background-color: var(--primary-color);">
+            <div class="container">
+                <h1 class="hero-title">Projeto 3</h1>
+                <p class="hero-text">Descrição do projeto</p>
+            </div>
+        </section>
+
+        <nav class="breadcrumb-nav">
+            <div class="container">
+                <a href="../projetos/projetos.html" class="breadcrumb-link">Todos os Projetos</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">Projeto 3</span>
+            </div>
+        </nav>
+
+        <section class="section projeto-info">
+            <div class="container">
+                <div class="grid" style="grid-template-columns: 2fr 1fr; gap: 40px; align-items: flex-start;">
+                    <div class="projeto-content">
+                        <h2 class="section-subtitle">Publico alvo – Projeto 3</h2>
+                        
+                        <div class="projeto-texto">
+                            <p> ## Descrição do Projeto ##  </p>
+                            
+                            
+                            
+                            <ul class="styled-list">
+                                <li><strong>QUALIFICAÇÃO 1</strong> Descrição 1</li>
+                                <li><strong>QUALIFICAÇÃO 2</strong> Descrição 2</li>
+                                <li><strong>QUALIFICAÇÃO 3</strong> Descrição 3</li>
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="projeto-objetivos">
+                            <h2 class="section-title">Objetivos</h2>
+                            
+                            <div class="card">
+                                <div class="card-content">
+                                    <h3 class="card-title">Objetivo Geral:</h3>
+                                    <p>Descrição do objetivo Geral</p>
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="margin-top: 20px;">
+                                <div class="card-content">
+                                    <h3 class="card-title">Objetivos específicos:</h3>
+                                    <ul class="styled-list">
+                                        <li>Descrição do objetivo específicos </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="creche-sidebar">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="card-title">Informações do Projeto</h3>
+                                <div class="info-item">
+                                    <i class="fas fa-file-signature"></i>
+                                    <div>
+                                        <strong>Termo de Colaboração:</strong>
+                                        <p>xx/xxxx</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <strong>Email:</strong>
+                                        <p>instituicao@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <strong>Endereço:</strong>
+                                        <p>Rua xx, 00 - xxxxxx<br>Cidade - Estado, País</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-top: 30px;">
+                            <div class="card-content">
+                                <h3 class="card-title">Documentos do Projeto</h3>
+                                <ul class="styled-list">
+                                    <li><a href="#" class="btn-link">Relatório Anual 2023</a></li>
+                                    <li><a href="#" class="btn-link">Termo de Colaboração</a></li>
+                                    <li><a href="#" class="btn-link">Regulamento Interno</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projeto-cta bg-primary">
+            <div class="container">
+                <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 40px;">
+                    <div>
+                        <h2 class="section-title" style="color: var(--black);">Quer saber mais sobre o Projeto 3?</h2>
+                        <p class="section-subtitle" style="color: var(--black);">Entre em contato conosco para mais informações</p>
+                    </div>
+                    <div class="text-right">
+                        <a href="../contato.html" class="btn btn-secondary">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+<footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="img/logo.png" alt="Logo instituição" class="footer-logo" width="120" height="120" loading="lazy">
+                    <p>Transformando vidas através de projetos sociais desde 1994.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="projetos/projetos.html">Projetos</a></li>
+                        <li><a href="transparencia/transparencia.html">Transparência</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Projetos</h3>
+                    <ul>
+                        <li><a href="projeto1.html">projeto 1</a></li>
+                        <li><a href="projeto2.html">projeto 2</a></li>
+                        <li><a href="projeto3.html">projeto 3</a></li>
+                        <li><a href="projeto4.html">projeto 4</a></li>
+                        <li><a href="creches/creches.html">Creches CEDINS</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Contato</h3>
+                    <ul>
+                        <li class="contact-item"><i class="fas fa-map-marker-alt"></i> Rua doze, 000 – bairro 1
+
+                            CEP 12230-660 
+                            
+                            São José dos Campos – SP
+                            
+                            </li>
+                        <li class="contact-item"><i class="fas fa-phone"></i> (00) 0000-0000</li>
+                        <li class="contact-item"><i class="fas fa-envelope"></i>instituição@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> instituição. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                   
+                </div>
+            </div>
+        </div>
+    </footer>

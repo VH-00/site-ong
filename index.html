@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="instituição">
+    <title>Início | instituição</title>
+    
+    <!-- Pré-conexão para CDNs -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Pré-carregar imagens importantes -->
+    <link rel="preload" href="img/logo.png" as="image">
+    <link rel="preload" href="img/logo-branco.png" as="image">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo instituição" width="60" height="60">
+                <span class="logo-text">instituição</span>
+            </div>
+            
+            <!-- Menu de navegação principal -->
+          <nav id="main-nav" class="nav" aria-label="Navegação principal">
+    <ul class="nav-list">
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+
+        <!-- Menu de Projetos -->
+        <li class="dropdown">
+            <a href="projetos/projetos.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                Projetos <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="projetos/sede.html" class="dropdown-link">Sede</a>
+                <a href="projetos/projeto1.html" class="dropdown-link">projeto 1 </a>
+                <a href="projetos/projeto2.html" class="dropdown-link">projeto 2</a>
+                <a href="projetos/projeto3.html" class="dropdown-link">projeto 3</a>
+                <a href="projetos/projeto4.html" class="dropdown-link">projeto 4</a>
+                <a href="projetos/creches/creches.html" class="dropdown-link">
+                    Creches CEDINS <i class="fas fa-chevron-right"></i>
+                </a>
+                <div class="nested-dropdown">
+                    <a href="projetos/creches/creche1.html" class="dropdown-link">creche 1</a>
+                    <a href="projetos/creches/creche2.html" class="dropdown-link">creche 2</a>
+                    <a href="projetos/creches/creche3.html" class="dropdown-link">creche 3</a>
+                    
+                </div>
+            </div>
+        </li>
+        
+        <!-- Menu de Transparência -->
+        <li class="dropdown">
+            <a href="transparencia/transparencia.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                Transparência <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="transparencia/transparencia.html" class="dropdown-link">Visão Geral</a>
+                <div class="dropdown-divider"></div>
+                <span class="dropdown-header">Transparência por Projeto</span>
+                <a href="transparencia/transparencia-sede.html" class="dropdown-link">Sede instituição</a>
+                <a href="transparencia/transparencia-projeto1.html" class="dropdown-link">Projeto 1</a>
+            </div>
+        </li>
+
+        <!-- Outros Links -->
+        <li><a href="como-ajudar.html" class="nav-link">Como Ajudar</a></li>
+        <li><a href="trabalhe-conosco.html" class="nav-link">Trabalhe Conosco</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+</nav>
+            
+            <!-- Botão do menu móvel -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-heading" class="hero-title">Transformando Vidas, Construindo Futuros</h1>
+                <p class="hero-text">Há mais de 30 anos atuando na comunidade com projetos sociais que fazem a diferença</p>
+                <div class="btn-group">
+                    <a href="como-ajudar.html" class="btn btn-primary">Quero Ajudar</a>
+                    <a href="projetos/projetos.html" class="btn btn-primary">Conheça Nossos Projetos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="section" aria-labelledby="destaques-heading">
+        <div class="container">
+            <h2 id="destaques-heading" class="section-title">Nossos Projetos em Destaque</h2>
+            <div class="grid grid-3cols" id="projetos-destaque">
+                <!-- Skeleton loading para projetos -->
+                <div class="card skeleton skeleton-project"></div>
+                <div class="card skeleton skeleton-project"></div>
+                <div class="card skeleton skeleton-project"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Números -->
+    <section class="section stats" aria-labelledby="numeros-heading">
+        <div class="container">
+            <h2 id="numeros-heading" class="visually-hidden">Nossos Números</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-count="5000">0</h3>
+                    <p>Pessoas Impactadas</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-count="10">0</h3>
+                    <p>Projetos Sociais</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-count="30">30</h3>
+                    <p>Anos de Atuação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notícias -->
+    <section class="section" aria-labelledby="noticias-heading">
+        <div class="container">
+            <h2 id="noticias-heading" class="section-title">Últimas Notícias</h2>
+            <div class="grid grid-3cols" id="ultimas-noticias">
+                <!-- Skeleton loading para notícias -->
+                <div class="card skeleton skeleton-news"></div>
+                <div class="card skeleton skeleton-news"></div>
+                <div class="card skeleton skeleton-news"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta section" aria-labelledby="cta-heading">
+        <div class="container">
+            <h2 id="cta-heading" class="cta-title">Você pode fazer a diferença!</h2>
+            <p class="hero-text">Seja um voluntário ou faça uma doação para ajudar nossos projetos</p>
+            <div class="btn-group">
+                <a href="como-ajudar.html" class="btn btn-secondary">Quero Doar</a>
+                <a href="trabalhe-conosco.html" class="btn btn-secondary">Trabalhe Conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="img/logo.png" alt="Logo instituição" class="footer-logo" width="120" height="120" loading="lazy">
+                    <p>Transformando vidas através de projetos sociais desde 1994.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="projetos/projetos.html">Projetos</a></li>
+                        <li><a href="transparencia/transparencia.html">Transparência</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Projetos</h3>
+                    <ul>
+                        <li><a href="projetos/projeto1.html">projeto 1</a></li>
+                        <li><a href="projetos/projeto2.html">projeto 2</a></li>
+                        <li><a href="projetos/projeto3.html">projeto 3</a></li>
+                        <li><a href="projetos/projeto4.html">projeto 4</a></li>
+                        <li><a href="projetos/creches/creches.html">Creches CEDINS</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Contato</h3>
+                    <ul>
+                        <li class="contact-item"><i class="fas fa-map-marker-alt"></i> Rua doze, 000 – bairro 1
+
+                            CEP 12230-660 
+                            
+                            São José dos Campos – SP
+                            
+                            </li>
+                        <li class="contact-item"><i class="fas fa-phone"></i> (00) 0000-0000</li>
+                        <li class="contact-item"><i class="fas fa-envelope"></i>instituição@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> instituição. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

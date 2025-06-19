@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="instituição">
+    <title>Como Ajudar | instituição</title>
+    
+    <!-- Pré-conexão para CDNs -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Pré-carregar imagens importantes -->
+    <link rel="preload" href="img/logo.png" as="image">
+    <link rel="preload" href="img/logo-branco.png" as="image">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo instituição" width="60" height="60">
+                <span class="logo-text">instituição</span>
+            </div>
+            
+            <!-- Menu de navegação principal -->
+          <nav id="main-nav" class="nav" aria-label="Navegação principal">
+    <ul class="nav-list">
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+
+        <!-- Menu de Projetos -->
+        <li class="dropdown">
+            <a href="projetos/projetos.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                Projetos <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="projetos/sede.html" class="dropdown-link">Sede</a>
+                <a href="projetos/projeto1.html" class="dropdown-link">projeto 1 </a>
+                <a href="projetos/projeto2.html" class="dropdown-link">projeto 2</a>
+                <a href="projetos/projeto3.html" class="dropdown-link">projeto 3</a>
+                <a href="projetos/projeto4.html" class="dropdown-link">projeto 4</a>
+                <a href="projetos/creches/creches.html" class="dropdown-link">
+                    Creches CEDINS <i class="fas fa-chevron-right"></i>
+                </a>
+                <div class="nested-dropdown">
+                    <a href="projetos/creches/creche1.html" class="dropdown-link">creche 1</a>
+                    <a href="projetos/creches/creche2.html" class="dropdown-link">creche 2</a>
+                    <a href="projetos/creches/creche3.html" class="dropdown-link">creche 3</a>
+                    
+                </div>
+            </div>
+        </li>
+        
+        <!-- Menu de Transparência -->
+        <li class="dropdown">
+            <a href="transparencia/transparencia.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                Transparência <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="transparencia/transparencia.html" class="dropdown-link">Visão Geral</a>
+                <div class="dropdown-divider"></div>
+                <span class="dropdown-header">Transparência por Projeto</span>
+                <a href="transparencia/transparencia-sede.html" class="dropdown-link">Sede instituição</a>
+                <a href="transparencia/transparencia-projeto1.html" class="dropdown-link">Projeto 1</a>
+            </div>
+        </li>
+        
+        <!-- Outros Links -->
+        <li><a href="como-ajudar.html" class="nav-link">Como Ajudar</a></li>
+        <li><a href="trabalhe-conosco.html" class="nav-link">Trabalhe Conosco</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+</nav>
+            
+            <!-- Botão do menu móvel -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+  <main class="doacao-page">
+    <!-- Hero -->
+    <section class="hero page-header">
+      <div class="container">
+        <h1 class="hero-title">Doe e Faça a Diferença</h1>
+        <p class="hero-text">Sua contribuição transforma vidas e fortalece nossos projetos sociais</p>
+      </div>
+    </section>
+
+    <!-- Como sua doação ajuda -->
+    <section class="section como-ajuda bg-light">
+      <div class="container">
+        <h2 class="section-title">Como sua doação será utilizada</h2>
+        <div class="grid grid-2cols" style="gap: 40px;">
+          <div>
+            <ul class="styled-list">
+              <li>📚 Oferecer educação e apoio escolar para crianças</li>
+              <li>🍲 Garantir alimentação a famílias em situação de vulnerabilidade</li>
+              <li>🏠 Manter os abrigos e centros de acolhimento funcionando com qualidade</li>
+              <li>💊 Oferecer cuidados básicos de saúde e orientação</li>
+              <li>🎨 Promover cultura, lazer e inclusão social</li>
+            </ul>
+          </div>
+          <div>
+            <img src="img/doacao-ajuda.jpg" alt="Imagem ilustrativa" style="width: 100%; border-radius: 8px;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vantagens para o doador -->
+    <section class="section vantagens-doador">
+      <div class="container">
+        <h2 class="section-title">Por que ser um doador?</h2>
+        <div class="grid grid-3cols" style="gap: 30px;">
+          <div class="card text-center">
+            <i class="fas fa-heart icon-lg" style="color: var(--secondary-color);"></i>
+            <h3>Impacto Real</h3>
+            <p>Você ajuda diretamente milhares de pessoas todos os anos</p>
+          </div>
+          <div class="card text-center">
+            <i class="fas fa-receipt icon-lg" style="color: var(--secondary-color);"></i>
+            <h3>Transparência</h3>
+            <p>Receba relatórios com resultados e prestação de contas</p>
+          </div>
+          <div class="card text-center">
+            <i class="fas fa-star icon-lg" style="color: var(--secondary-color);"></i>
+            <h3>Reconhecimento</h3>
+            <p>Doador recorrente? Ganhe certificado e destaque em nossos eventos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA para doar -->
+    <section class="cta section" aria-labelledby="cta-doe">
+      <div class="container">
+        <h2 id="cta-doe" class="cta-title">Pronto para ajudar?</h2>
+        <p class="hero-text">Você pode doar uma vez ou se tornar um doador mensal. Toda contribuição conta.</p>
+        <div class="btn-group">
+          <a href="xx" class="btn btn-secondary">Fazer Doação</a>
+          <a href="contato.html" class="btn btn-secondary">Fale Conosco</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="img/logo.png" alt="Logo instituição" class="footer-logo" width="120" height="120" loading="lazy">
+                    <p>Transformando vidas através de projetos sociais desde 1994.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="projetos/projetos.html">Projetos</a></li>
+                        <li><a href="transparencia/transparencia.html">Transparência</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Projetos</h3>
+                    <ul>
+                        <li><a href="projetos/projeto1.html">projeto 1</a></li>
+                        <li><a href="projetos/projeto2.html">projeto 2</a></li>
+                        <li><a href="projetos/projeto3.html">projeto 3</a></li>
+                        <li><a href="projetos/projeto4.html">projeto 4</a></li>
+                        <li><a href="projetos/creches/creches.html">Creches CEDINS</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Contato</h3>
+                    <ul>
+                        <li class="contact-item"><i class="fas fa-map-marker-alt"></i> Rua doze, 000 – bairro 1
+
+                            CEP 12230-660 
+                            
+                            São José dos Campos – SP
+                            
+                            </li>
+                        <li class="contact-item"><i class="fas fa-phone"></i> (00) 0000-0000</li>
+                        <li class="contact-item"><i class="fas fa-envelope"></i>instituição@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> instituição. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
