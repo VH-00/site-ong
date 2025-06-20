@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 2,
             titulo: "Projeto 1",
-            descricao: "Descrição 1",
+            descricao: "Documentos financeiros do Projeto 1 administrativa",
             imagem: "img/projetos/projeto1.jpg",
             link: "transparencia-projeto1.html"
         },
