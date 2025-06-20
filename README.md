@@ -67,13 +67,19 @@ Projetos
   /projetos/sede.html
 
   /projetos/creches
-    /projetos/creches/creche1.html
-    /projetos/creches/creche2.html
-    /projetos/creches/creche3.html
+   
+   /projetos/creches/creche1.html
+    
+   /projetos/creches/creche2.html
+    
+   /projetos/creches/creche3.html
 
 Transparencia
+  
   /Transparencia/transparencia.html
+ 
   /Transparencia/transparencia-sede.html
+  
   /Transparencia/transparencia-projeto1.html
 
 /como-ajudar.html
@@ -83,12 +89,17 @@ Transparencia
 /contato.html
 
 CSS
+  
   CSS/style.css
 
 js
+  
   js/main.js
+ 
   js/projetos.js
+  
   js/trabalhe-conosco..js
+  
   js/transparencia.js
 
  imgs
