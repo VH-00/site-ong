@@ -15,20 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             imagem: "img/projetos/projeto1.jpg",
             link: "trasnsparencia-projeto1.html"
         },
-        {
-            id: 3,
-           titulo: "Projeto 2",
-            descricao: "Descrição 2",
-            imagem: "img/projetos/projeto2.jpg",
-            link: "projeto2.html"
-        },
-        {
-            id: 4,
-            titulo: "Projeto 3",
-            descricao: "Descrição 3",
-            imagem: "img/projetos/projeto3.jpg",
-            link: "projeto3.html"
-        }
+        
     ];
 
     const container = document.getElementById('projetos-transparencia');
