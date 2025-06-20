@@ -44,33 +44,55 @@ O site foi projetado para uma instituição genérica, permitindo divulgar sua m
 
 
 /index.html
+
+
 /sobre.html
+
+
 Projetos
+ 
+  
   /projetos.html
+  
+  
   /projetos/Projeto1.html
+ 
+  
   /projetos/Projeto2.html
+  
   /projetos/Projeto3.html
+
   /projetos/Projeto4.html
+ 
   /projetos/sede.html
+
   /projetos/creches
     /projetos/creches/creche1.html
     /projetos/creches/creche2.html
     /projetos/creches/creche3.html
+
 Transparencia
   /Transparencia/transparencia.html
   /Transparencia/transparencia-sede.html
   /Transparencia/transparencia-projeto1.html
+
 /como-ajudar.html
+
 /trabalhe-conosco.html
+
 /contato.html
+
 CSS
   CSS/style.css
+
 js
   js/main.js
   js/projetos.js
   js/trabalhe-conosco..js
   js/transparencia.js
+
  imgs
+
  docs
 
  
