@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             titulo: "Projeto 1",
             descricao: "Descrição 1",
             imagem: "img/projetos/projeto1.jpg",
-            link: "trasnsparencia-projeto1.html"
+            link: "transparencia-projeto1.html"
         },
         
     ];
